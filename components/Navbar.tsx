@@ -3,6 +3,7 @@ import { cookies } from 'next/headers';
 import { ShoppingBag, LogIn, Plus, List } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import { LogoutButton } from './LogoutButton';
+import { MobileMenu } from './MobileMenu';
 
 export default async function Navbar() {
   const cookieStore = await cookies();
@@ -41,9 +42,9 @@ export default async function Navbar() {
         </div>
 
         {/* Mobile Menu Button + Theme Toggle for Mobile */}
-        <div className="md:hidden flex items-center gap-4">
+        <div className="md:hidden flex items-center gap-2">
              <ThemeToggle />
-             <Link href="/items" className="p-2"><List /></Link>
+             <MobileMenu isLoggedIn={isLoggedIn} />
         </div>
       </div>
     </nav>
