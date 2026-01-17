@@ -41,6 +41,13 @@ A modern, responsive, and feature-rich e-commerce frontend built with **Next.js 
   - JWT-based authentication flow (Login/lines).
   - Middleware for route protection (redirects unauthenticated users from protected pages).
 
+## 🔐 Login Credentials
+
+Use the following mock credentials to test the authentication features:
+
+- **Email:** `admin@example.com`
+- **Password:** `123456`
+
 ## 🚀 Getting Started
 
 ### Prerequisites
